@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.nav{
+    margin-top: 22px;
+    margin-right: 4vw;
+    display: flex;
+}
+.botoes{
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 22px;
+    cursor: pointer;
+}
+.seta{
+    height: 17px;
+    rotate: 90deg;
+    transition: 0.2s;
+}
+.botoes .icons{
+    height: 38px;
+}
+.SearchBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Search{
+    border: solid #259f7f 1PX;
+    border-radius: 8px;
+    width: 38VW;
+    height: 36px;
+    background: url(imagens/lupa.png)
+     no-repeat left / 26px;
+     background-position-x: 10px;
+     padding-left: 40px;
+}
+.linha{
+    background-color: #C6D4FF;
+    width: 100vw;
+    height: 5px;
+}
+.contact,.Bag,.profile{
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    border: #259f7fc7 solid 2px;
+    border-radius: 3px;
+    margin-top: 4px;
+    display: none;
+    align-items: normal;
+    transition: 1s;
+}
+
+
+.contact a,.Bag a,.profile a{
+    text-decoration: none;
+    color: #259f7f;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.contact a:hover,.Bag a:hover,.profile a:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+.botoes:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+
+}
+#contact {
+    right: 13vw;
+    top: 78px;
+    width: 119px;
+    height: 84px;
+}
+#Bag{
+    right: 7.5vw;
+    top: 78px;
+    width: 119px;
+    height: 85px;
+}
+#profile{
+    right: 1vw;
+    top: 78px;
+    width: 127px;
+    height: 114px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+.logo img{
+    width: 18.9vw;;
+}
+.Menu-Hamburguer {
+    background: none;
+    border: none;
+    display: none;
+}
+.Menu-Hamburguer img{
+    width: 66px;
+}
+
+@media (max-width: 780px) {
+    .nav {
+        display: none;
+    }
+    .Menu-Hamburguer{
+        display: block;
+    }
+
+}
